@@ -1,0 +1,60 @@
+
+/*HOMEPAGE*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.logoEpicode{
+    width: 200px;
+    margin-bottom: 80px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+h2{
+    color: #C2138C;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 7px;
+}
+
+.title{
+    font-family: "Outfit";
+}
+
+ul{
+    margin: 50px 25px;
+    line-height: 30px;
+}
+
+.blue-button{
+    background-color: #02FFFF;
+    color: #0B113B;
+    float: right;
+    font-size: 20px;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    box-shadow: 2px 2px 40px #3cc1ff;
+}
+
+
