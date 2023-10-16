@@ -11,8 +11,9 @@
 body {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 80%;
+    min-height: 100vh;
     margin: 50px auto;
     color: white;
     font-family: 'Inter', sans-serif;
