@@ -79,4 +79,9 @@ input[type="checkbox"]:after {
     vertical-align: middle;
   }
 
+  input[type="checkbox"]:checked:after {
+    content: "✓";
+    font-size: 12px;
+}
+
 
