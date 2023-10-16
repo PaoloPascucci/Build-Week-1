@@ -85,3 +85,14 @@ input[type="checkbox"]:after {
 }
 
 
+/*QUESTIONS PAGE*/
+
+#counter {
+    background-color: red;
+    vertical-align: top;
+    float: right;
+}
+
+
+
+
