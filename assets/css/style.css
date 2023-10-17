@@ -212,9 +212,15 @@ h3 {
 
 
 #star{
-
-}
-
-#text-conentent{
-    visibility: visible;
+    line-height: 100px;
+    border: 2px solid #D4D4DB;
+    border-radius: 50px;
+    background-color: red;
+    box-sizing: border-box;
+    margin: 20px;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    font-size: 27px;
+    font-weight: bold;
 }
