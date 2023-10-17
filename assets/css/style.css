@@ -155,6 +155,78 @@ input[type="radio"] {
 #mainDivResult {
   text-align: center;
 }
+#rateButton {
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.resultContainer {
+  text-align: center;
+  margin: 100px 0;
+}
+.correctContainer,
+.wrongContainer {
+  display: inline-block;
+  color: white;
+}
+.progress {
+  display: inline-block;
+  margin: 0 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 30px solid;
+  border-color:  #c2138c #c2138c #02ffff #02ffff;
+  text-align: center;
+
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+
+#circle {
+  width: 100%;
+  height: 100%;
+  
+}
+.message {
+  padding-top: 30px;
+  font-size: 12px;
+  font-weight: 100;
+  transform: rotate(-45deg);
+  padding-right: 30px;
+  line-height: 17px;
+  
+}
+.message span:first-child {
+  font-weight: 900;
+  
+}
+.message span:last-child {
+  filter: brightness(0.8);
+}
+.NC,
+.NW {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.correct {
+  color: #02ffff;
+}
+.failed {
+  color: #c2138c;
+}
+
+.correct,
+.failed {
+  font-weight: 700;
+}
+.visible{
+filter: brightness(0.8);
+}
 
 #rateButton {
   text-align: center;
