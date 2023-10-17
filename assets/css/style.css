@@ -117,7 +117,7 @@ input[type="checkbox"]:checked:after {
 }
 
 
-label{
+.questionsClass{
     line-height: 100px;
     border: 1px solid transparent;
     box-shadow: 0px -3px 8px white;
@@ -132,7 +132,7 @@ label{
 }
 
 
-label:hover{
+.questionsClass:hover{
     background-color: #AA0085;
     box-shadow: 0px -3px 8px white;
 }
