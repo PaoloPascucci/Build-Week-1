@@ -14,8 +14,7 @@ const questions = [
     category: "Science: Computers",
     type: "multiple",
     difficulty: "easy",
-    question:
-      "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
+    question: `In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?`,
     correct_answer: "Final",
     incorrect_answers: ["Static", "Private", "Public"],
   },
@@ -109,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-
   function createRadioOption(value) {
     const radio = document.createElement("input");
     radio.setAttribute("type", "radio");
@@ -138,9 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentQuestionsIndex < questions.length) {
       start(); // Display the next question
     } else {
-      window.location.href = "./result.html"
+      window.location.href = "./result.html";
     }
   }
   aContainer.addEventListener("change", checkAnswer);
-  start()
+  start();
 });
