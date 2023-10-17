@@ -17,6 +17,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#mainHomepage
+{
+    width: 900px;
+    margin-inline: auto;
+}
+
 .logoEpicode {
   width: 200px;
   margin-bottom: 80px;
