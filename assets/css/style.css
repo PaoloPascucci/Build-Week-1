@@ -104,6 +104,22 @@ input[type='checkbox']:checked:after {
 }
 
 
+#mainQuestions{
+    text-align: center;
+}
+
+#question{
+    font-weight: bold;
+}
+
+
+.answersContainer{
+    margin-top: 80px;
+    font-size: 30px;
+    border: 20px solid black;
+    width: 670px;
+}
+
 
 
 
