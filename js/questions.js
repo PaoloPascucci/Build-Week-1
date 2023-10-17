@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     radio.setAttribute("name", "risposta");
     radio.setAttribute("value", value);
     const label = document.createElement("label");
+    label.className = "questionsClass";
     label.innerText = value;
 
     label.appendChild(radio);
