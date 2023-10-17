@@ -19,17 +19,30 @@
     <h3 id="h3Final">From 0 to 10, how likely are you to recommend EPICODE <br> to a friend or a colleague?</h3>
     
     <div>
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg" class="star"/>
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
-      <img src="/assets/img/star.svg"class="star" />
+  
 
+      <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+
+
+      <script>
+        const stars = document.querySelectorAll('.star-rating');
+        
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                const rating = index + 1;
+                );
+            });
+        });
+    </script>
   </div>
     <div id="commentSection">
       <h3>Leave us an open feedback about your experience so far</h2>
