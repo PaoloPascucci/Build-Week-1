@@ -122,7 +122,9 @@ label{
     line-height: 100px;
     border: 2px solid #D4D4DB;
     border-radius: 50px;
-    background-color: #2F295A;
+    /* background-color: #2F295A; */
+    /* background-color: blur(100px); */
+    /* filter: blur(1px); */
     box-sizing: border-box;
     margin: 20px;
     display: inline-block;
@@ -131,6 +133,12 @@ label{
     font-size: 27px;
     font-weight: bold;
 }
+
+
+label:hover{
+    background-color: #AA0085;
+}
+
 
 input[type='radio']{
     visibility: hidden;
