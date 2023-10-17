@@ -120,11 +120,9 @@ input[type="checkbox"]:checked:after {
 
 label{
     line-height: 100px;
-    border: 2px solid #D4D4DB;
+    border: 1px solid transparent;
+    box-shadow: 0px -3px 8px white;
     border-radius: 50px;
-    /* background-color: #2F295A; */
-    /* background-color: blur(100px); */
-    /* filter: blur(1px); */
     box-sizing: border-box;
     margin: 20px;
     display: inline-block;
@@ -137,6 +135,7 @@ label{
 
 label:hover{
     background-color: #AA0085;
+    box-shadow: 0px -3px 8px white;
 }
 
 
