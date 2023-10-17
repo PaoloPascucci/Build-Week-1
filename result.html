@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="./js/share.js"></script>
   </head>
   <body>
     <header>
@@ -17,14 +18,20 @@
       <div id="mainDivResult">
         <h1><b>Results</b></h1>
         <h3>The summary of your answers:</h3>
-        <br />
-        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br />
       </div>
+      <div class="resultContainer">
+        <div class="correctContainer"></div>
+        <div class="progress">
+          <div id="circle">
+            <div class="message"></div>          
+          </div>
+        </div>
+        <div class="wrongContainer"></div>
+      </div>
+      <section id="rateButton">
+        <a href="./final.html" id="proceedButton" class="rate-us-button">RATE US</a>
+      </section>
     </main>
-    <section id="rateButton">
-      <a href="./final.html" id="proceedButton" class="rate-us-button">RATE US</a>
-    </section>
+    <script src="./js/result.js"></script>
   </body>
 </html>

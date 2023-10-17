@@ -1,138 +1,189 @@
-
 /*HOMEPAGE*/
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
-    min-height: 100vh;
-    margin: 50px auto;
-    color: white;
-    font-family: 'Inter', sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  min-height: 100vh;
+  margin: 50px auto;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
 
-.logoEpicode{
-    width: 200px;
-    margin-bottom: 80px;
+.logoEpicode {
+  width: 200px;
+  margin-bottom: 80px;
 }
 
-h1{
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 50px;
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 50px;
 }
 
-h2{
-    color: #C2138C;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 7px;
+h2 {
+  color: #c2138c;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 7px;
 }
 
-.title{
-    font-family: "Outfit";
+.title {
+  font-family: "Outfit";
 }
 
-ul{
-    margin: 50px 25px;
-    line-height: 30px;
+ul {
+  margin: 50px 25px;
+  line-height: 30px;
 }
 
-.blue-button{
-    background-color: #02FFFF;
-    color: #0B113B;
-    /* float: right; */
-    font-size: 20px;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    box-shadow: 2px 2px 40px #3cc1ff;
-    margin-left: 17%;
+.blue-button {
+  background-color: #02ffff;
+  color: #0b113b;
+  /* float: right; */
+  font-size: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  box-shadow: 2px 2px 40px #3cc1ff;
+  margin-left: 17%;
 }
 
-.checkLabel{
-    margin-left: 10px;
+.checkLabel {
+  margin-left: 10px;
 }
 
 input[type="checkbox"]:after {
-    width: 15px;
-    height: 15px;
-    content: " ";
-    background-color: #0C113B;
-    color: #fff;
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-    margin-top: -2px;
-  }
-
-  .checkContainer{
-    height: 60px;
-    vertical-align: middle;
-  }
-
-
-
-input[type='checkbox']:checked:after {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    content: 'X';
-    font-size: 16px;
-    text-align: center;
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+  width: 15px;
+  height: 15px;
+  content: " ";
+  background-color: #0c113b;
+  color: #fff;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  margin-top: -2px;
 }
 
+.checkContainer {
+  height: 60px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked:after {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  content: "X";
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
 
 /*QUESTIONS PAGE*/
 
 #counter {
-    background-color: red;
-    vertical-align: top;
-    float: right;
+  background-color: red;
+  vertical-align: top;
+  float: right;
 }
-
-
-
-
 
 /*RESULT PAGE*/
 
-.rate-us-button{
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    font-size: 20px;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
+.rate-us-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
 }
 
-
-#mainDivResult{
-    text-align: center;
+#mainDivResult {
+  text-align: center;
 }
 
-#rateButton{
-    text-align: center;
+#rateButton {
+  text-align: center;
 }
 
-h3{
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 50px;
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.resultContainer {
+  text-align: center;
+  margin: 100px 0;
+}
+.correctContainer,
+.wrongContainer {
+  display: inline-block;
+  color: white;
+}
+.progress {
+  display: inline-block;
+  margin: 0 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 30px solid;
+  border-color:  #c2138c #c2138c #02ffff #02ffff;
+  text-align: center;
+
+  overflow: hidden;
+  transform: rotate(45deg);
 }
 
+#circle {
+  width: 100%;
+  height: 100%;
+  
+}
+.message {
+  padding-top: 30px;
+  font-size: 12px;
+  font-weight: 100;
+  transform: rotate(-45deg);
+  padding-right: 30px;
+  line-height: 17px;
+  
+}
+.message span:first-child {
+  font-weight: 900;
+  
+}
+.message span:last-child {
+  filter: brightness(0.8);
+}
+.NC,
+.NW {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.correct {
+  color: #02ffff;
+}
+.failed {
+  color: #c2138c;
+}
 
+.correct,
+.failed {
+  font-weight: 700;
+}
+.visible{
+filter: brightness(0.8);
+}
