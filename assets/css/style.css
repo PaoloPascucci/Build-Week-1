@@ -98,26 +98,25 @@ input[type="checkbox"]:checked:after {
   float: right;
 }
 
-
-#mainQuestions{
-    text-align: center;
+#mainQuestions {
+  text-align: center;
 }
 
-#question{
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 40px;
+#question {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 40px;
 }
 
-
-.answersContainer{
-    margin-top: 80px;
-    font-size: 30px;
-    width: 100%;
-    height: 400px;
-    margin-inline: auto;
+.answersContainer {
+  margin-top: 80px;
+  font-size: 30px;
+  width: 100%;
+  height: 400px;
+  margin-inline: auto;
 }
 
+<<<<<<< HEAD
 label{
     line-height: 100px;
     border: 1px solid transparent;
@@ -136,18 +135,31 @@ label{
 label:hover{
     background-color: #AA0085;
     box-shadow: 0px -3px 8px white;
+=======
+label {
+  line-height: 100px;
+  border: 2px solid #d4d4db;
+  border-radius: 50px;
+  /* background-color: #2F295A; */
+  /* background-color: blur(100px); */
+  /* filter: blur(1px); */
+  box-sizing: border-box;
+  margin: 20px;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  font-size: 27px;
+  font-weight: bold;
 }
 
-
-input[type='radio']{
-    visibility: hidden;
-    
+label:hover {
+  background-color: #aa0085;
+>>>>>>> 2cc9e49c0ea16ce64b632d0db93aebdf0a295d3c
 }
 
-
-
-
-
+input[type="radio"] {
+  visibility: hidden;
+}
 
 /*RESULT PAGE*/
 
@@ -201,7 +213,6 @@ h3 {
   margin-top: 50px;
 }
 
-
 #h3Final {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -215,19 +226,19 @@ h3 {
   margin-bottom: 20px;
   font-size: 18px;
   color: white;
+  width: 80%;
 }
 
-
-#star{
-    line-height: 100px;
-    border: 2px solid #D4D4DB;
-    border-radius: 50px;
-    background-color: red;
-    box-sizing: border-box;
-    margin: 20px;
-    display: inline-block;
-    width: 500px;
-    height: 100px;
-    font-size: 27px;
-    font-weight: bold;
+#star {
+  line-height: 100px;
+  border: 2px solid #d4d4db;
+  border-radius: 50px;
+  background-color: red;
+  box-sizing: border-box;
+  margin: 20px;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  font-size: 27px;
+  font-weight: bold;
 }
