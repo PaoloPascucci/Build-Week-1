@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const label = document.createElement("label");
     label.innerText = value;
 
-    aContainer.appendChild(radio);
+    label.appendChild(radio);
     aContainer.appendChild(label);
   }
 
