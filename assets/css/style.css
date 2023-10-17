@@ -80,9 +80,18 @@ input[type="checkbox"]:after {
     vertical-align: middle;
   }
 
-  input[type="checkbox"]:checked:after {
-    content: "✓";
-    font-size: 12px;
+
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    content: 'X';
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
 
 
