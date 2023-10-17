@@ -8,3 +8,4 @@
         linkButton.removeAttribute("href");
       }
     };
+    inputCheck.addEventListener("change", toggleLink);
