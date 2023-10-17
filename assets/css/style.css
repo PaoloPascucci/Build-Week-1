@@ -1,106 +1,101 @@
-
 /*HOMEPAGE*/
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
-    min-height: 100vh;
-    margin: 50px auto;
-    color: white;
-    font-family: 'Inter', sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  min-height: 100vh;
+  margin: 50px auto;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
 
-.logoEpicode{
-    width: 200px;
-    margin-bottom: 80px;
+.logoEpicode {
+  width: 200px;
+  margin-bottom: 80px;
 }
 
-h1{
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 50px;
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 50px;
 }
 
-h2{
-    color: #C2138C;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 7px;
+h2 {
+  color: #c2138c;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 7px;
 }
 
-.title{
-    font-family: "Outfit";
+.title {
+  font-family: "Outfit";
 }
 
-ul{
-    margin: 50px 25px;
-    line-height: 30px;
+ul {
+  margin: 50px 25px;
+  line-height: 30px;
 }
 
-.blue-button{
-    background-color: #02FFFF;
-    color: #0B113B;
-    /* float: right; */
-    font-size: 20px;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    box-shadow: 2px 2px 40px #3cc1ff;
-    margin-left: 17%;
+.blue-button {
+  background-color: #02ffff;
+  color: #0b113b;
+  /* float: right; */
+  font-size: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  box-shadow: 2px 2px 40px #3cc1ff;
+  margin-left: 17%;
 }
 
-.checkLabel{
-    margin-left: 10px;
+.checkLabel {
+  margin-left: 10px;
 }
 
 input[type="checkbox"]:after {
-    width: 15px;
-    height: 15px;
-    content: " ";
-    background-color: #0C113B;
-    color: #fff;
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-    margin-top: -2px;
-  }
-
-  .checkContainer{
-    height: 60px;
-    vertical-align: middle;
-  }
-
-
-
-input[type='checkbox']:checked:after {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    content: 'X';
-    font-size: 16px;
-    text-align: center;
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
+  width: 15px;
+  height: 15px;
+  content: " ";
+  background-color: #0c113b;
+  color: #fff;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  margin-top: -2px;
 }
 
+.checkContainer {
+  height: 60px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked:after {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  content: "X";
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
 
 /*QUESTIONS PAGE*/
 
 #counter {
-    background-color: red;
-    vertical-align: top;
-    float: right;
+  background-color: red;
+  vertical-align: top;
+  float: right;
 }
 
 
@@ -125,75 +120,66 @@ input[type='checkbox']:checked:after {
 
 /*RESULT PAGE*/
 
-.rate-us-button{
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    font-size: 20px;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
+.rate-us-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+#mainDivResult {
+  text-align: center;
+}
+
+#rateButton {
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+/*FINAL PAGE*/
+
+#finalHtml {
+  text-align: center;
+}
+
+.more-info-button {
+  background-color: #02ffff;
+  color: #0b113b;
+  font-size: 20px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  box-shadow: 2px 2px 40px #3cc1ff;
+}
+
+#rateButton {
+  margin-top: 100px;
+}
+
+#commentSection {
+  margin-top: 50px;
 }
 
 
-#mainDivResult{
-    text-align: center;
+#h3Final {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 40px;
 }
 
-#rateButton{
-    text-align: center;
+#commentFinal {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid purple;
+  margin-bottom: 20px;
 }
-
-h3{
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 50px;
-}
-
-
-
-/*FINAL PAGE*/ 
-
-#finalHtml{
-    text-align: center;
-}
-
-
-.more-info-button{
-    background-color: #02FFFF;
-    color: #0B113B;
-    font-size: 20px;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    box-shadow: 2px 2px 40px #3cc1ff;
-}
-
-
-#rateButton{
-    margin-top: 100px;
-}
-
-#commentSection{
-    margin-top: 50px;
-}
-
-#h1Final{
-    /* margin-bottom: 15px; */
-}
-
-#h3Final{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    line-height: 40px;
-}
-
-
-#commentFinal{
-    background-color: transparent;
-}
-
-
-
