@@ -1,130 +1,50 @@
 <html>
-<head></head>
+<head>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
 <body>
-  <script>
-    const questions = [
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question: "What does CPU stand for?",
-        correct_answer: "Central Processing Unit",
-        incorrect_answers: [
-          "Central Process Unit",
-          "Computer Personal Unit",
-          "Central Processor Unit",
-        ],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question:
-          "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
-        correct_answer: "Final",
-        incorrect_answers: ["Static", "Private", "Public"],
-      },
-      {
-        category: "Science: Computers",
-        type: "boolean",
-        difficulty: "easy",
-        question: "The logo for Snapchat is a Bell.",
-        correct_answer: "False",
-        incorrect_answers: ["True"],
-      },
-      {
-        category: "Science: Computers",
-        type: "boolean",
-        difficulty: "easy",
-        question:
-          "Pointers were not used in the original C programming language; they were added later on in C++.",
-        correct_answer: "False",
-        incorrect_answers: ["True"],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question:
-          "What is the most preferred image format used for logos in the Wikimedia database?",
-        correct_answer: ".svg",
-        incorrect_answers: [".png", ".jpeg", ".gif"],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question: "In web design, what does CSS stand for?",
-        correct_answer: "Cascading Style Sheet",
-        incorrect_answers: [
-          "Counter Strike: Source",
-          "Corrective Style Sheet",
-          "Computer Style Sheet",
-        ],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question:
-          "What is the code name for the mobile operating system Android 7.0?",
-        correct_answer: "Nougat",
-        incorrect_answers: [
-          "Ice Cream Sandwich",
-          "Jelly Bean",
-          "Marshmallow",
-        ],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question: "On Twitter, what is the character limit for a Tweet?",
-        correct_answer: "140",
-        incorrect_answers: ["120", "160", "100"],
-      },
-      {
-        category: "Science: Computers",
-        type: "boolean",
-        difficulty: "easy",
-        question: "Linux was first created as an alternative to Windows XP.",
-        correct_answer: "False",
-        incorrect_answers: ["True"],
-      },
-      {
-        category: "Science: Computers",
-        type: "multiple",
-        difficulty: "easy",
-        question:
-          "Which programming language shares its name with an island in Indonesia?",
-        correct_answer: "Java",
-        incorrect_answers: ["Python", "C", "Jakarta"],
-      },
-    ];
+  <header>
+    <a href="./homepage.html"><img src="./assets/img/epicode_logo.png" alt="Logo Epicode" class="logoEpicode" /></a>
+  </header>
+<h1 class="title"><b>Tell us how it's going</b></h1>
+<h3>form 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</h2>
+  <div class="rating">
+    <input type="radio" name="rating" id="star10" value="10" />
+    <label for="star10"></label>
+    <input type="radio" name="rating" id="star9" value="9" />
+    <label for="star9"></label>
+    <input type="radio" name="rating" id="star8" value="8" />
+    <label for="star8"></label>
+    <input type="radio" name="rating" id="star7" value="7" />
+    <label for="star7"></label>
+    <input type="radio" name="rating" id="star6" value="6" />
+    <label for="star6"></label>
+    <input type="radio" name="rating" id="star5" value="5" />
+    <label for="star5"></label>
+    <input type="radio" name="rating" id="star4" value="4" />
+    <label for="star4"></label>
+    <input type="radio" name="rating" id="star3" value="3" />
+    <label for="star3"></label>
+    <input type="radio" name="rating" id="star2" value="2" />
+    <label for="star2"></label>
+    <input type="radio" name="rating" id="star1" value="1" />
+    <label for="star1"></label>
+    <h3>Leave us an open feedback about your experience so far</h2>
+  </div>
+</body>
+</html>
 
-    window.onload = function () {
-      // TIPS:
 
-      // SE MOSTRI TUTTE LE RISPOSTE ASSIEME IN FORMATO LISTA:
-      // Per ogni domanda, crea un container e incorporale tutte all'interno. 
-      // Crea poi dei radio button
-      // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio
-      // con le risposte corrette e incorrette come opzioni
-      // (dovrai probabilmente cercare su un motore di ricerca come ottenere un valore da un radio button in JS per ottenere il punteggio finale) 
-      //
-      // SE MOSTRI UNA DOMANDA ALLA VOLTA:
-      // Mostra la prima domanda con il testo e i radio button.
-      // Quando l'utente seleziona una risposta, passa alla domanda successiva dell'array e sostituisci quella precedentemente visualizzata con quella corrente,
-      // salvando le risposte dell'utente in una variabile
-    };
 
-      // Come calcolare il risultato? Hai due strade:
-      // Se stai mostrando tutte le domande nello stesso momento, controlla semplicemente se i radio button selezionati sono === correct_answer
-      // Se stai mostrando una domanda alla volta, aggiungi semplicemente un punto alla variabile del punteggio che hai precedentemente creato SE la risposta selezionata è === correct_answer
 
-      // BUON LAVORO 💪🚀
-  </script>
+
+
+
+
+
+   
+  
 </body>
 
 </html>
