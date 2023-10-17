@@ -132,7 +132,7 @@ label{
     font-weight: bold;
 }
 
-input{
+input[type='radio']{
     visibility: hidden;
     
 }
