@@ -136,26 +136,6 @@ label:hover{
     background-color: #AA0085;
     box-shadow: 0px -3px 8px white;
 
-label {
-  line-height: 100px;
-  border: 2px solid #d4d4db;
-  border-radius: 50px;
-  /* background-color: #2F295A; */
-  /* background-color: blur(100px); */
-  /* filter: blur(1px); */
-  box-sizing: border-box;
-  margin: 20px;
-  display: inline-block;
-  width: 500px;
-  height: 100px;
-  font-size: 27px;
-  font-weight: bold;
-}
-
-label:hover {
-  background-color: #aa0085;
-
-}
 
 input[type="radio"] {
   visibility: hidden;
