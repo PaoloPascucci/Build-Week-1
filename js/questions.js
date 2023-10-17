@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   let currentQuestionsIndex = 0;
   const h2 = document.querySelector("h2");
@@ -24,16 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-
   function createRadioOption(value) {
     const radio = document.createElement("input");
     radio.setAttribute("type", "radio");
     radio.setAttribute("name", "risposta");
     radio.setAttribute("value", value);
     const label = document.createElement("label");
+    label.className = "questionsClass";
     label.innerText = value;
 
-    aContainer.appendChild(radio);
+    label.appendChild(radio);
     aContainer.appendChild(label);
   }
 
@@ -57,5 +56,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   aContainer.addEventListener("change", checkAnswer);
-  start()
+  start();
 });

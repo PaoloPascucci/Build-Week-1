@@ -1,37 +1,57 @@
-<html>
-<head>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
 
 <body>
   <header>
     <a href="./homepage.html"><img src="./assets/img/epicode_logo.png" alt="Logo Epicode" class="logoEpicode" /></a>
   </header>
-<h1 class="title"><b>Tell us how it's going</b></h1>
-<h3>form 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</h2>
-  <div class="rating">
-    <input type="radio" name="rating" id="star10" value="10" />
-    <label for="star10"></label>
-    <input type="radio" name="rating" id="star9" value="9" />
-    <label for="star9"></label>
-    <input type="radio" name="rating" id="star8" value="8" />
-    <label for="star8"></label>
-    <input type="radio" name="rating" id="star7" value="7" />
-    <label for="star7"></label>
-    <input type="radio" name="rating" id="star6" value="6" />
-    <label for="star6"></label>
-    <input type="radio" name="rating" id="star5" value="5" />
-    <label for="star5"></label>
-    <input type="radio" name="rating" id="star4" value="4" />
-    <label for="star4"></label>
-    <input type="radio" name="rating" id="star3" value="3" />
-    <label for="star3"></label>
-    <input type="radio" name="rating" id="star2" value="2" />
-    <label for="star2"></label>
-    <input type="radio" name="rating" id="star1" value="1" />
-    <label for="star1"></label>
-    <h3>Leave us an open feedback about your experience so far</h2>
+  <main id="finalHtml">
+    <h1 class="title" id="h1Final"><b>Tell us how it's going</b></h1>
+    <h3 id="h3Final">From 0 to 10, how likely are you to recommend EPICODE <br> to a friend or a colleague?</h3>
+    
+    <div>
+  
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+
+
+            <script>
+              const stars = document.querySelectorAll('.star-rating');
+              
+              stars.forEach((star, index) => {
+                  star.addEventListener('click', () => {
+                      const rating = index + 1;
+                      ;
+                  });
+              });
+          </script>
+    </script>
   </div>
+    <div id="commentSection">
+      <h3>Leave us an open feedback about your experience so far</h2>
+        <input type="text" placeholder="Write your comment here" id="commentFinal">
+    </div>
+  </main>
+  <section id="rateButton">
+    <a href="" id="proceedButton" class="more-info-button">PROCEED</a>
+  </section>
 </body>
 </html>
 
