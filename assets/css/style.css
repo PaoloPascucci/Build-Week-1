@@ -17,7 +17,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-
 .logoEpicode {
   width: 200px;
   margin-bottom: 80px;
@@ -117,27 +116,24 @@ input[type="checkbox"]:checked:after {
   margin-inline: auto;
 }
 
-
-.questionsClass{
-    line-height: 100px;
-    border: 1px solid transparent;
-    box-shadow: 0px -3px 8px white;
-    border-radius: 50px;
-    box-sizing: border-box;
-    margin: 20px;
-    display: inline-block;
-    width: 500px;
-    height: 100px;
-    font-size: 27px;
-    font-weight: bold;
+.questionsClass {
+  line-height: 100px;
+  border: 1px solid transparent;
+  box-shadow: 0px -3px 8px white;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  font-size: 27px;
+  font-weight: bold;
 }
 
-
-.questionsClass:hover{
-    background-color: #AA0085;
-    box-shadow: 0px -3px 8px white;
+.questionsClass:hover {
+  background-color: #aa0085;
+  box-shadow: 0px -3px 8px white;
 }
-
 
 input[type="radio"] {
   visibility: hidden;
@@ -209,6 +205,7 @@ h3 {
   font-size: 18px;
   color: white;
   width: 80%;
+  margin-top: 30px;
 }
 
 #star {
