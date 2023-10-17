@@ -136,3 +136,48 @@ h3{
 }
 
 
+
+/*FINAL PAGE*/ 
+
+#finalHtml{
+    text-align: center;
+}
+
+
+.more-info-button{
+    background-color: #02FFFF;
+    color: #0B113B;
+    font-size: 20px;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    box-shadow: 2px 2px 40px #3cc1ff;
+}
+
+
+#rateButton{
+    margin-top: 100px;
+}
+
+#commentSection{
+    margin-top: 50px;
+}
+
+#h1Final{
+    /* margin-bottom: 15px; */
+}
+
+#h3Final{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+
+#commentFinal{
+    background-color: transparent;
+}
+
+
+
