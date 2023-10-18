@@ -20,16 +20,16 @@
     
     <div>
   
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
-            <a href="#" class="star-rating"><img src="/assets/img/star.svg" alt="Stella" class="star" /></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating"></a>
 
            
             <script>
@@ -38,8 +38,9 @@
               stars.forEach((star, index) => {
                   star.addEventListener('click', () => {
                       const rating = index + 1;
-                      ;
+                    star.classList.add("colored-star")
                   });
+                  
               });
           </script>     
    
