@@ -20,28 +20,45 @@
     
     <div>
   
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
-            <a href="#" class="star-rating"></a>
+            <a href="#" class="star-rating" id="1"></a>
+            <a href="#" class="star-rating" id="2"></a>
+            <a href="#" class="star-rating" id="3"></a>
+            <a href="#" class="star-rating" id="4"></a>
+            <a href="#" class="star-rating" id="5"></a>
+            <a href="#" class="star-rating" id="6"></a>
+            <a href="#" class="star-rating" id="7"></a>
+            <a href="#" class="star-rating" id="8"></a>
+            <a href="#" class="star-rating" id="9"></a>
+            <a href="#" class="star-rating" id="10"></a>
 
            
             <script>
               const stars = document.querySelectorAll('.star-rating');
+              console.log(stars);
               
               stars.forEach((star, index) => {
                   star.addEventListener('click', () => {
                       const rating = index + 1;
                     star.classList.add("colored-star")
+                    console.log(index);
+                    stars.forEach((star, index2) => {
+                      if (index >= index2) {
+                        star.classList.add("active");
+                      }
+                      else
+                      {
+                        star.classList.remove("active");
+                      }
+                    })
+
                   });
                   
               });
+
+
+              
+                
+              
           </script>     
    
 

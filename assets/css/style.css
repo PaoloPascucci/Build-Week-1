@@ -325,12 +325,12 @@ h3 {
   width: 50px;
   display: inline-block;
 
-  filter: contrast(50%);
+  filter: contrast(10%);
 }
 .star-rating:hover {
   filter: opacity(0.5);
 }
 
-.colored-start {
-  filter: invert(87%) sepia(52%) saturate(1444%) hue-rotate(112deg) brightness(105%) contrast(105%);
+.active {
+  filter: opacity(10);
 }
