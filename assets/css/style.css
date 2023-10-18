@@ -290,7 +290,7 @@ h3 {
 }
 
 #commentSection {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 #h3Final {
@@ -308,6 +308,7 @@ h3 {
   color: white;
   width: 79%;
   margin-top: 50px;
+  padding: 5px 20px;
 }
 
 #star {
@@ -330,9 +331,10 @@ h3 {
   background-size: cover;
   height: 50px;
   width: 50px;
+  margin-inline: 10px;
   display: inline-block;
 
-  filter: contrast(10%);
+  filter: brightness(0.5%) saturate(100%) invert(12%) sepia(19%) saturate(1860%) hue-rotate(194deg) brightness(101%) contrast(112%);
 }
 .star-rating:hover {
   filter: opacity(0.5);
