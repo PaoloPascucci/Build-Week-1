@@ -38,9 +38,6 @@
               
               stars.forEach((star, index) => {
                   star.addEventListener('click', () => {
-                      const rating = index + 1;
-                    star.classList.add("colored-star")
-                    console.log(index);
                     stars.forEach((star, index2) => {
                       if (index >= index2) {
                         star.classList.add("active");
