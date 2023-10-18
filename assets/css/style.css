@@ -217,7 +217,7 @@ h3 {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 32px 35px;
 }
 .message {
   background-color: #511d70;
@@ -225,13 +225,14 @@ h3 {
   height: 230px;
   margin: auto;
   padding-top: 45px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 100;
-  line-height: 17px;
+  line-height: 20px;
   border-radius: 50%;
 }
 .message span:first-child {
   font-weight: 900;
+  font-size: 20px;
 }
 .message span:last-child {
   filter: brightness(0.8);
@@ -251,6 +252,7 @@ h3 {
 .correct,
 .failed {
   font-weight: 700;
+  font-size: 18px;
 }
 .visible {
   filter: brightness(0.8);
