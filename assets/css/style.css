@@ -108,7 +108,7 @@ input[type="checkbox"]:checked:after {
 }
 #counter {
   width: 90%;
-  height: 90%;
+  height: 92%;
   margin: 5px auto;
   border-radius: 50%;
   background-color: #511d70;
