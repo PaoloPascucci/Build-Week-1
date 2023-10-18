@@ -207,8 +207,8 @@ h3 {
 .progress {
   display: inline-block;
   margin: 0 100px;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   text-align: center;
 }
@@ -238,7 +238,7 @@ h3 {
 }
 .NC,
 .NW {
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 5px;
 }
 .correct {
