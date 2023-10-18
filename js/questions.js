@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
           createRadioOption(incorrectAnswer);
         });
       }
-      h2.innerText = "QUESTION " + (currentQuestionsIndex + 1) + "/" + questions.length;
+      h2.innerHtml = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${questions.length}`
     }
     progress()
   };
