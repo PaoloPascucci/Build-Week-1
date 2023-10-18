@@ -38,7 +38,7 @@ correctContainer.innerHTML = '<p class="NC">Correct<br><b>' + totalC + '%</b></p
 wrongContainer.innerHTML = '<p class="NW">Wrong<br><b>' + totalW + '%</b></p> <span>' + NwrongAnswer + '/' + questions.length + ' questions</span>'
 const progress = document.querySelector(".progress")
 const circle = document.getElementById("circle");
-const gradient = `linear-gradient(to left, #511D70,#0C113B)`;
+const gradient = `conic-gradient(#c2138c ${totalW*3.6}deg, #02ffff 1deg)`;
 progress.style.background = gradient;
 
 

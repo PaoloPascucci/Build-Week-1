@@ -17,10 +17,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#mainHomepage
-{
-    width: 900px;
-    margin-inline: auto;
+#mainHomepage {
+  width: 900px;
+  margin-inline: auto;
 }
 
 .logoEpicode {
@@ -98,12 +97,33 @@ input[type="checkbox"]:checked:after {
 
 /*QUESTIONS PAGE*/
 
-#counter {
-  background-color: red;
-  vertical-align: top;
+.donut {
+  width: 130px;
+  height: 130px;
+  background: conic-gradient(#ededed 360deg, #3498db 0.5deg);
+  padding: 1px;
+  border-radius: 50%;
   float: right;
+  text-align: center;
 }
-
+#counter {
+  width: 90%;
+  height: 90%;
+  margin: 5px auto;
+  border-radius: 50%;
+  background-color: #511d70;
+  font-weight: 100;
+  line-height: 30px;
+  font-size: x-small;
+  padding-top: 10px;
+}
+#counter span {
+  font-size: 35px;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 #mainQuestions {
   text-align: center;
 }
@@ -185,31 +205,28 @@ h3 {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 30px solid;
-  border-color:  #c2138c #c2138c #02ffff #02ffff;
   text-align: center;
-
-  overflow: hidden;
-  transform: rotate(45deg);
 }
 
 #circle {
-  width: 100%;
-  height: 100%;
-  
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 10px;
 }
 .message {
-  padding-top: 30px;
+  background-color: #511d70;
+  width: 230px;
+  height: 230px;
+  margin: auto;
+  padding-top: 45px;
   font-size: 12px;
   font-weight: 100;
-  transform: rotate(-45deg);
-  padding-right: 30px;
   line-height: 17px;
-  
+  border-radius: 50%;
 }
 .message span:first-child {
   font-weight: 900;
-  
 }
 .message span:last-child {
   filter: brightness(0.8);
@@ -230,8 +247,8 @@ h3 {
 .failed {
   font-weight: 700;
 }
-.visible{
-filter: brightness(0.8);
+.visible {
+  filter: brightness(0.8);
 }
 
 #rateButton {
@@ -298,4 +315,22 @@ h3 {
   height: 100px;
   font-size: 27px;
   font-weight: bold;
+}
+
+.star-rating {
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+
+  filter: contrast(50%);
+}
+.star-rating:hover {
+  filter: opacity(0.5);
+}
+
+.colored-start {
+  filter: invert(87%) sepia(52%) saturate(1444%) hue-rotate(112deg) brightness(105%) contrast(105%);
 }

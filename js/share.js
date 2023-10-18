@@ -1,6 +1,7 @@
 let correctAnswer = 0;
 let wrongAnswer = 0;
-
+let count = 0;
+let counter = 30;
 const questions = [
   {
     category: "Science: Computers",

@@ -3,8 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const h2 = document.querySelector("h2");
   const title = document.querySelector("h1");
   const aContainer = document.querySelector(".answersContainer");
+  let intervalID;
 
   const start = function () {
+    clearInterval(intervalID);
     const question = questions[currentQuestionsIndex];
     if (question) {
       title.innerText = question.question;
@@ -21,7 +23,38 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       h2.innerText = "QUESTION " + (currentQuestionsIndex + 1) + "/" + questions.length;
     }
+    progress()
   };
+
+  function progress() {
+    let counterElement = document.getElementById("counter");
+    let donut = document.getElementById("donut");
+    let counter = 30; // Initialize the counter to 30
+    let count = 0;
+
+    intervalID = setInterval(() => {
+      counter--;
+      count++;
+      counterElement.innerHTML = `seconds<span>${counter}</span>remaining`;
+      donut.style.background = `conic-gradient( #ededed ${count * 12}deg, #3498db 0.5deg)`;
+      if (counter <= 0) {
+        count = 0;
+        counter = 30;
+        currentQuestionsIndex++;
+        wrongAnswer++;
+        if (currentQuestionsIndex < questions.length) {
+          start(); // Display the next question
+        } else {
+          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
+        }
+      }
+    }, 1000);
+  }
+
+
+  function stopCounter() {
+    clearInterval(intervalID);
+  }
 
   function createRadioOption(value) {
     const radio = document.createElement("input");
@@ -50,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     currentQuestionsIndex++;
     if (currentQuestionsIndex < questions.length) {
+      stopCounter()
       start(); // Display the next question
     } else {
       window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
