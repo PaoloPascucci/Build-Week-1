@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
           createRadioOption(incorrectAnswer);
         });
       }
-      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${questions.length}`
+      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${questions.length}`;
     }
-    progress()
+    progress();
   };
 
   function progress() {
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
   }
 
-
   function stopCounter() {
     clearInterval(intervalID);
   }
@@ -71,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkAnswer() {
     const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
+    const label = document.querySelectorAll("label");
+    console.log(label);
     if (radioButtons.length === 1) {
       const selectedAnswer = radioButtons[0].value;
       const question = questions[currentQuestionsIndex];
@@ -81,14 +82,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    currentQuestionsIndex++;
-    if (currentQuestionsIndex < questions.length) {
-      stopCounter()
-      start(); // Display the next question
-    } else {
-      window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
-    }
+    setTimeout(function () {
+      currentQuestionsIndex++;
+      if (currentQuestionsIndex < questions.length) {
+        stopCounter();
+        start(); // Display the next question
+      } else {
+        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
+      }
+    }, 1000);
   }
+
   aContainer.addEventListener("change", checkAnswer);
   start();
 });
