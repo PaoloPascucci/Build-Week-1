@@ -70,14 +70,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkAnswer() {
     const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-    const label = document.querySelectorAll("label");
-    console.log(label);
+    // console.log("labels:", labels);
     if (radioButtons.length === 1) {
       const selectedAnswer = radioButtons[0].value;
+      const labelParent = radioButtons[0].parentElement;
       const question = questions[currentQuestionsIndex];
+
+      console.log("question:", question);
+      console.log("selected:", selectedAnswer);
       if (selectedAnswer === question.correct_answer) {
+        labelParent.style.backgroundColor = "green";
         correctAnswer++;
       } else {
+        labelParent.style.backgroundColor = "red";
         wrongAnswer++;
       }
     }
