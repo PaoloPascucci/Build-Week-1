@@ -17,6 +17,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#hard, #easy{
+  visibility: visible;
+}
+
+#titleDifficulty{
+  margin-bottom: 20px;
+}
+
 #mainHomepage {
   width: 900px;
   margin-inline: auto;
