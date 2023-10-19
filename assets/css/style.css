@@ -311,6 +311,7 @@ h3 {
   width: 100%;
   margin-top: 50px;
   padding: 5px 20px;
+  outline: transparent;
 }
 
 #star {
