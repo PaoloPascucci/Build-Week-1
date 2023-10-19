@@ -12,11 +12,11 @@ function toggle() {
     linkButton.href = "./questions.html?difficoltà=hard";
     console.log(linkButton);
   } else if (inputCheck.checked && radioButtonEasy.checked) {
-    inkButton.href = "./questions.html?difficoltà=easy";
+    linkButton.href = "./questions.html?difficoltà=easy";
     console.log(linkButton);
   } else {
-    inkButton.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    
+    linkButton.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+
     console.log(linkButton);
   }
 }
