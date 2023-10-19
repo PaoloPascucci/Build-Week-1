@@ -4,24 +4,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const title = document.querySelector("h1");
   const aContainer = document.querySelector(".answersContainer");
   let intervalID;
+  const urlParams = new URLSearchParams(window.location.search);
+  const difficultyTest = urlParams.get("difficoltà");
+  let array;
+
+  if (difficultyTest === "easy") {
+    array = questions;
+  } else {
+    array = arrayQuestions;
+  }
+
+  console.log(array);
 
   const start = function () {
     clearInterval(intervalID);
-    const question = questions[currentQuestionsIndex];
-    if (question) {
-      title.innerText = question.question;
+    const newQuestions = array[currentQuestionsIndex];
+    if (newQuestions) {
+      title.innerText = newQuestions.question;
       aContainer.innerHTML = "";
 
-      if (question.type === "boolean") {
-        createRadioOption(question.correct_answer);
-        createRadioOption(question.incorrect_answers[0]);
+      if (newQuestions.type === "boolean") {
+        createRadioOption(newQuestions.correct_answer);
+        createRadioOption(newQuestions.incorrect_answers[0]);
       } else {
-        createRadioOption(question.correct_answer);
-        question.incorrect_answers.forEach((incorrectAnswer) => {
+        createRadioOption(newQuestions.correct_answer);
+        newQuestions.incorrect_answers.forEach((incorrectAnswer) => {
           createRadioOption(incorrectAnswer);
         });
       }
-      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${questions.length}`;
+      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${array.length}`;
     }
     progress();
   };
@@ -42,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
         counter = 30;
         currentQuestionsIndex++;
         wrongAnswer++;
-        if (currentQuestionsIndex < questions.length) {
+        if (currentQuestionsIndex < array.length) {
           start(); // Display the next question
         } else {
-          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
+          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}`;
         }
       }
     }, 1000);
@@ -73,11 +84,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (radioButtons.length === 1) {
       const selectedAnswer = radioButtons[0].value;
       const labelParent = radioButtons[0].parentElement;
-      const question = questions[currentQuestionsIndex];
+      const newQuestions = array[currentQuestionsIndex];
 
-      console.log("question:", question);
+      console.log("question:", newQuestions);
       console.log("selected:", selectedAnswer);
-      if (selectedAnswer === question.correct_answer) {
+      if (selectedAnswer === newQuestions.correct_answer) {
         labelParent.style.backgroundColor = "green";
         correctAnswer++;
       } else {
@@ -88,11 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       currentQuestionsIndex++;
-      if (currentQuestionsIndex < questions.length) {
+      if (currentQuestionsIndex < array.length) {
         stopCounter();
         start(); // Display the next question
       } else {
-        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}`;
+        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}`;
       }
     }, 1000);
   }
