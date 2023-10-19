@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkAnswer() {
     const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-    // console.log("labels:", labels);
     if (radioButtons.length === 1) {
       const selectedAnswer = radioButtons[0].value;
       const labelParent = radioButtons[0].parentElement;
