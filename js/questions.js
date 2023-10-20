@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let intervalID;
   const urlParams = new URLSearchParams(window.location.search);
   const difficultyTest = urlParams.get("difficoltà");
+  const amountOfQuestions = urlParams.get("amount");
+  console.log(amountOfQuestions);
   let array;
 
   if (difficultyTest === "easy") {
