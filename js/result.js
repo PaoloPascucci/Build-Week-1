@@ -10,11 +10,11 @@ const difficultyTest = urlParams.get("difficoltà");
 let array;
 
 if (difficultyTest === "easy") {
-  array = questions;
+  array = easyQuestions;
 } else if (difficultyTest === "medium") {
   array = mediumQuestions;
 } else {
-  array = arrayQuestions;
+  array = hardQuestions;
 }
 
 const WinMessagge = `<span>Congratulations</span><br>

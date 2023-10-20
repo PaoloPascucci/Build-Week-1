@@ -2,7 +2,7 @@ let correctAnswer = 0;
 let wrongAnswer = 0;
 let count = 0;
 let counter = 30;
-const questions = [
+const easyQuestions = [
   {
     category: "Science: Computers",
     type: "multiple",
@@ -88,91 +88,6 @@ const questions = [
     question: "Which programming language shares its name with an island in Indonesia?",
     correct_answer: "Java",
     incorrect_answers: ["Python", "C", "Jakarta"],
-  },
-];
-const arrayQuestions = [
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "Who is the founder of Palantir?",
-    correct_answer: "Peter Thiel",
-    incorrect_answers: ["Mark Zuckerberg", "Marc Benioff", "Jack Dorsey"],
-  },
-
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "What type of sound chip does the Super Nintendo Entertainment System (SNES) have?",
-    correct_answer: "ADPCM Sampler",
-    incorrect_answers: ["FM Synthesizer", "Programmable Sound Generator", "PCM Sampler"],
-  },
-
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "What was the name of the first Bulgarian personal computer?",
-    correct_answer: "IMKO-1",
-    incorrect_answers: ["Pravetz 82", "Pravetz 8D", "IZOT 1030"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "The acronym &quot;RIP&quot; stands for which of these?",
-    correct_answer: "Routing Information Protocol",
-    incorrect_answers: ["Runtime Instance Processes", "Regular Interval Processes", "Routine Inspection Protocol"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "Who invented the &quot;Spanning Tree Protocol&quot;?",
-    correct_answer: "Radia Perlman",
-    incorrect_answers: ["Paul Vixie", "Vint Cerf", "Michael Roberts"],
-  },
-  {
-    category: "Science: Computers",
-    type: "boolean",
-    difficulty: "hard",
-    question: "DHCP stands for Dynamic Host Configuration Port.",
-    correct_answer: "False",
-    incorrect_answers: ["True"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question:
-      "What is the name of the process that sends one qubit of information using two bits of classical information?",
-    correct_answer: "Quantum Teleportation",
-    incorrect_answers: ["Super Dense Coding", "Quantum Entanglement", "Quantum Programming"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "America Online (AOL) started out as which of these online service providers?",
-    correct_answer: "Quantum Link",
-    incorrect_answers: ["CompuServe", "Prodigy", "GEnie"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "What port does HTTP run on?",
-    correct_answer: "80",
-    incorrect_answers: ["53", "443", "23"],
-  },
-  {
-    category: "Science: Computers",
-    type: "multiple",
-    difficulty: "hard",
-    question: "Which of these names was an actual codename for a cancelled Microsoft project?",
-    correct_answer: "Neptune",
-    incorrect_answers: ["Enceladus", "Pollux", "Saturn"],
   },
 ];
 const mediumQuestions = [
@@ -267,3 +182,89 @@ const mediumQuestions = [
     incorrect_answers: ["Pixar Teapot", "3D Teapot", "Tennessee Teapot"],
   },
 ];
+const hardQuestions = [
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "Who is the founder of Palantir?",
+    correct_answer: "Peter Thiel",
+    incorrect_answers: ["Mark Zuckerberg", "Marc Benioff", "Jack Dorsey"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "What type of sound chip does the Super Nintendo Entertainment System (SNES) have?",
+    correct_answer: "ADPCM Sampler",
+    incorrect_answers: ["FM Synthesizer", "Programmable Sound Generator", "PCM Sampler"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "What was the name of the first Bulgarian personal computer?",
+    correct_answer: "IMKO-1",
+    incorrect_answers: ["Pravetz 82", "Pravetz 8D", "IZOT 1030"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "The acronym &quot;RIP&quot; stands for which of these?",
+    correct_answer: "Routing Information Protocol",
+    incorrect_answers: ["Runtime Instance Processes", "Regular Interval Processes", "Routine Inspection Protocol"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "Who invented the &quot;Spanning Tree Protocol&quot;?",
+    correct_answer: "Radia Perlman",
+    incorrect_answers: ["Paul Vixie", "Vint Cerf", "Michael Roberts"],
+  },
+  {
+    category: "Science: Computers",
+    type: "boolean",
+    difficulty: "hard",
+    question: "DHCP stands for Dynamic Host Configuration Port.",
+    correct_answer: "False",
+    incorrect_answers: ["True"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question:
+      "What is the name of the process that sends one qubit of information using two bits of classical information?",
+    correct_answer: "Quantum Teleportation",
+    incorrect_answers: ["Super Dense Coding", "Quantum Entanglement", "Quantum Programming"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "America Online (AOL) started out as which of these online service providers?",
+    correct_answer: "Quantum Link",
+    incorrect_answers: ["CompuServe", "Prodigy", "GEnie"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "What port does HTTP run on?",
+    correct_answer: "80",
+    incorrect_answers: ["53", "443", "23"],
+  },
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "hard",
+    question: "Which of these names was an actual codename for a cancelled Microsoft project?",
+    correct_answer: "Neptune",
+    incorrect_answers: ["Enceladus", "Pollux", "Saturn"],
+  },
+];
+

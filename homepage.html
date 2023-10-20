@@ -40,12 +40,15 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet" />
     <script src="./js/share.js"></script>
   </head>
   <body>
     <header>
-      <a href="./homepage.html"><img src="./assets/img/epicode_logo.png" alt="Logo Epicode" class="logoEpicode" /></a>
+      <a href="./homepage.html"><img src="./assets/img/epicode_logo.png"
+          alt="Logo Epicode" class="logoEpicode" /></a>
     </header>
     <main id="mainHomepage">
       <h1 class="title">Welcome to <br /><b>your exam</b></h1>
@@ -64,25 +67,25 @@
         <li>This exam will take approx. <b>0-5 minutes.</b></li>
       </ul>
       <h3 id="titleDifficulty" class="title">Scegli la difficoltà delle domande</h3>
-      <div class="checkContainer">
-        <label class="checkLabel" for="easy"
-          ><input id="easy" class="check" type="radio" name="difficulty" />EASY</label
-        >
-      </div>
-      <div class="checkContainer">
-        <label class="checkLabel" for="easy"
-          ><input id="medium" class="check" type="radio" name="difficulty" />MEDIUM</label
-        >
-      </div>
-      <div class="checkContainer">
-        <label class="checkLabel" for="hard"
-          ><input id="hard" class="check" type="radio" name="difficulty" />HARD</label
-        >
+      <div class="difficultyContainer">
+        <div class="checkContainer cC2">
+          <label class="checkLabel difficulty" for="easy"><input id="easy"
+              class="check" type="radio" name="difficulty" />EASY</label>
+        </div>
+        <div class="checkContainer cC2">
+          <label class="checkLabel difficulty" for="medium"><input id="medium"
+              class="check" type="radio" name="difficulty" />MEDIUM</label>
+        </div>
+        <div class="checkContainer cC2">
+          <label class="checkLabel difficulty" for="hard"><input id="hard"
+              class="check" type="radio" name="difficulty" />HARD</label>
+        </div>
       </div>
       <div class="checkContainer">
         <input id="check" class="check" type="checkbox" />
-        <label class="checkLabel" for="check">I promise to answer myself without help from anyone</label>
-        <a href="" id="proceedButton" class="blue-button">PROCEED</a>
+        <label class="checkLabel" for="check">I promise to answer myself without
+          help from anyone</label>
+        <a href id="proceedButton" class="blue-button">PROCEED</a>
       </div>
     </main>
     <script src="./js/start.js"></script>

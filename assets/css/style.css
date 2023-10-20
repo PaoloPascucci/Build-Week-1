@@ -17,11 +17,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#hard, #easy, #medium{
+#hard,
+#easy,
+#medium {
   visibility: visible;
 }
 
-#titleDifficulty{
+#titleDifficulty {
   margin-bottom: 20px;
 }
 
@@ -88,7 +90,7 @@ input[type="checkbox"]:after {
 
 .checkContainer {
   height: 60px;
-  vertical-align: middle;
+  padding: 15px 0 0 0;
 }
 
 input[type="checkbox"]:checked:after {
@@ -102,7 +104,32 @@ input[type="checkbox"]:checked:after {
   visibility: visible;
   border: 2px solid white;
 }
-
+.difficulty {
+  border-radius: 9999px;
+  background-color: #ededed;
+  padding: 10px;
+  border: 3px solid #ededed;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+.difficulty.isChecked {
+  background-color: lime;
+}
+.difficulty.isNotChecked {
+  filter: brightness(0.5);
+}
+.checkContainer .difficulty .check {
+  display: none;
+}
+.checkContainer.cC2 {
+  display: inline-block;
+  height: 100px;
+  padding: 35px 0;
+}
+.check:disabled {
+  filter: brightness(0.5);
+}
 /*QUESTIONS PAGE*/
 
 .donut {
@@ -151,7 +178,7 @@ input[type="checkbox"]:checked:after {
 }
 
 h2 span {
-  color :white;
+  color: white;
   letter-spacing: 3px;
 }
 
@@ -345,7 +372,8 @@ h3 {
   margin-inline: 10px;
   display: inline-block;
 
-  filter: brightness(0.5%) saturate(100%) invert(12%) sepia(19%) saturate(1860%) hue-rotate(194deg) brightness(101%) contrast(112%);
+  filter: brightness(0.5%) saturate(100%) invert(12%) sepia(19%) saturate(1860%) hue-rotate(194deg) brightness(101%)
+    contrast(112%);
 }
 .star-rating:hover {
   filter: opacity(0.5);
