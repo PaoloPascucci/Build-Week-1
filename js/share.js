@@ -175,3 +175,95 @@ const arrayQuestions = [
     incorrect_answers: ["Enceladus", "Pollux", "Saturn"],
   },
 ];
+const mediumQuestions = [
+  {
+    category: "Science: Computers",
+    type: "boolean",
+    difficulty: "medium",
+    question:
+      "All program codes have to be compiled into an executable file in order to be run. This file can then be executed on any machine.",
+    correct_answer: "False",
+    incorrect_answers: ["True"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "On which computer hardware device is the BIOS chip located?",
+    correct_answer: "Motherboard",
+    incorrect_answers: ["Hard Disk Drive", "Central Processing Unit", "Graphics Processing Unit"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "What did the name of the Tor Anonymity Network orignially stand for?",
+    correct_answer: "The Onion Router",
+    incorrect_answers: ["The Only Router", "The Orange Router", "The Ominous Router"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "boolean",
+    difficulty: "medium",
+    question: "The open source program Redis is a relational database server.",
+    correct_answer: "False",
+    incorrect_answers: ["True"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "What is the name of the default theme that is installed with Windows XP?",
+    correct_answer: "Luna",
+    incorrect_answers: ["Neptune", "Whistler", "Bliss"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "boolean",
+    difficulty: "medium",
+    question: "The first dual-core CPU was the Intel Pentium D.",
+    correct_answer: "False",
+    incorrect_answers: ["True"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "What is the main CPU is the Sega Mega Drive / Sega Genesis?",
+    correct_answer: "Motorola 68000",
+    incorrect_answers: ["Zilog Z80", "Yamaha YM2612", "Intel 8088"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "Laserjet and inkjet printers are both examples of what type of printer?",
+    correct_answer: "Non-impact printer",
+    incorrect_answers: ["Impact printer", "Daisywheel printer", "Dot matrix printer"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "Which programming language was developed by Sun Microsystems in 1995?",
+    correct_answer: "Java",
+    incorrect_answers: ["Python", "Solaris OS", "C++"],
+  },
+
+  {
+    category: "Science: Computers",
+    type: "multiple",
+    difficulty: "medium",
+    question: "The teapot often seen in many 3D modeling applications is called what?",
+    correct_answer: "Utah Teapot",
+    incorrect_answers: ["Pixar Teapot", "3D Teapot", "Tennessee Teapot"],
+  },
+];

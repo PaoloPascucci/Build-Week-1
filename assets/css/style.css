@@ -17,7 +17,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#hard, #easy{
+#hard, #easy, #medium{
   visibility: visible;
 }
 

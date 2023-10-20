@@ -11,6 +11,8 @@ let array;
 
 if (difficultyTest === "easy") {
   array = questions;
+} else if (difficultyTest === "medium") {
+  array = mediumQuestions;
 } else {
   array = arrayQuestions;
 }
