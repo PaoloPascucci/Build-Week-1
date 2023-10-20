@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           createRadioOption(incorrectAnswer);
         });
       }
-      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${array.length}`;
+      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${amountOfQuestions}`;
     }
     progress();
   };
@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
         counter = 30;
         currentQuestionsIndex++;
         wrongAnswer++;
-        if (currentQuestionsIndex < array.length) {
+        if (currentQuestionsIndex < amountOfQuestions) {
           start(); // Display the next question
         } else {
-          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}`;
+          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amountOfQuestions}`;
         }
       }
     }, 1000);
@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       currentQuestionsIndex++;
-      if (currentQuestionsIndex < array.length) {
+      if (currentQuestionsIndex < amountOfQuestions) {
         stopCounter();
         start(); // Display the next question
       } else {
-        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}`;
+        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amountOfQuestions}`;
       }
     }, 1000);
   }
