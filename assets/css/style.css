@@ -23,10 +23,6 @@ body {
   visibility: visible;
 }
 
-#titleDifficulty {
-  margin-bottom: 20px;
-}
-
 #mainHomepage {
   width: 900px;
   margin-inline: auto;
@@ -62,7 +58,6 @@ ul {
 .blue-button {
   background-color: #02ffff;
   color: #0b113b;
-  /* float: right; */
   font-size: 20px;
   padding: 15px 60px;
   text-decoration: none;
@@ -125,10 +120,20 @@ input[type="checkbox"]:checked:after {
 .checkContainer.cC2 {
   display: inline-block;
   height: 100px;
-  padding: 35px 0;
+  padding: 35px 0 25px;
 }
 .check:disabled {
   filter: brightness(0.5);
+}
+
+.qNContainer {
+  margin: 10px 0;
+}
+
+.qNContainer #number {
+  width: 50px;
+  height: 30px;
+  padding: 10px 5px;
 }
 /*QUESTIONS PAGE*/
 
