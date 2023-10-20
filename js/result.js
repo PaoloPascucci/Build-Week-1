@@ -7,6 +7,7 @@ const correctContainer = document.querySelector(".correctContainer");
 const wrongContainer = document.querySelector(".wrongContainer");
 const message = document.querySelector(".message");
 const difficultyTest = urlParams.get("difficoltà");
+const amountOfQuestions = urlParams.get("amount");
 let array;
 
 if (difficultyTest === "easy") {
@@ -33,8 +34,8 @@ promotions / spam folder)</span>`;
 console.log(correctContainer);
 console.log(wrongContainer);
 
-let totalC = (NcorrectAnswer / array.length) * 100;
-let totalW = (NwrongAnswer / array.length) * 100;
+let totalC = (NcorrectAnswer / amountOfQuestions) * 100;
+let totalW = (NwrongAnswer / amountOfQuestions) * 100;
 
 if (totalC > totalW) {
   message.innerHTML = WinMessagge;
@@ -50,10 +51,16 @@ correctContainer.innerHTML =
   "%</b></p> <span>" +
   NcorrectAnswer +
   "/" +
-  array.length +
+  amountOfQuestions +
   " questions</span>";
 wrongContainer.innerHTML =
-  '<p class="NW">Wrong<br><b>' + totalW + "%</b></p> <span>" + NwrongAnswer + "/" + array.length + " questions</span>";
+  '<p class="NW">Wrong<br><b>' +
+  totalW +
+  "%</b></p> <span>" +
+  NwrongAnswer +
+  "/" +
+  amountOfQuestions +
+  " questions</span>";
 const progress = document.querySelector(".progress");
 const circle = document.getElementById("circle");
 const gradient = `conic-gradient(#c2138c ${totalW * 3.6}deg, #02ffff 1deg)`;

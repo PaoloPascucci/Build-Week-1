@@ -3,6 +3,10 @@ const linkButton = document.getElementById("proceedButton");
 const radioButtonEasy = document.getElementById("easy");
 const radioButtonHard = document.getElementById("hard");
 const radioButtonMedium = document.getElementById("medium");
+const textBoxQuestions = document.getElementById("text").value;
+
+// const numberOfQuestion = textBoxQuestions.value;
+// console.log(numberOfQuestion);
 
 const difficulty = document.querySelectorAll(".difficulty")
 
@@ -60,13 +64,16 @@ function disableRadio(radio) {
 
 function toggle() {
   if (inputCheck.checked && radioButtonHard.checked) {
-    linkButton.href = "./questions.html?difficoltà=hard";
+    const textBoxQuestions = document.getElementById("text").value;
+    linkButton.href = `./questions.html?difficoltà=hard&amount=${textBoxQuestions}`;
     console.log(linkButton);
   } else if (inputCheck.checked && radioButtonEasy.checked) {
-    linkButton.href = "./questions.html?difficoltà=easy";
+    const textBoxQuestions = document.getElementById("text").value;
+    linkButton.href = `./questions.html?difficoltà=easy&amount=${textBoxQuestions}`;
     console.log(linkButton);
   } else if (inputCheck.checked && radioButtonMedium.checked) {
-    linkButton.href = "./questions.html?difficoltà=medium";
+    const textBoxQuestions = document.getElementById("text").value;
+    linkButton.href = `./questions.html?difficoltà=medium&amount=${textBoxQuestions}`;
   } else {
     linkButton.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   }
