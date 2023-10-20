@@ -3,7 +3,7 @@ const linkButton = document.getElementById("proceedButton");
 const radioButtonEasy = document.getElementById("easy");
 const radioButtonHard = document.getElementById("hard");
 const radioButtonMedium = document.getElementById("medium");
-const textBoxQuestions = document.getElementById("text").value;
+const textBoxQuestions = document.getElementById("number").value;
 
 // const numberOfQuestion = textBoxQuestions.value;
 // console.log(numberOfQuestion);
