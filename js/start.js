@@ -3,10 +3,9 @@ const linkButton = document.getElementById("proceedButton");
 const radioButtonEasy = document.getElementById("easy");
 const radioButtonHard = document.getElementById("hard");
 const radioButtonMedium = document.getElementById("medium");
-const textBoxQuestions = document.getElementById("number").value;
+const numberInput = document.getElementById("number");
+let inputValue = 0
 
-// const numberOfQuestion = textBoxQuestions.value;
-// console.log(numberOfQuestion);
 
 const difficulty = document.querySelectorAll(".difficulty")
 
@@ -62,20 +61,30 @@ function disableRadio(radio) {
   }
 }
 
+numberInput.addEventListener("input", function() {
+ inputValue = parseInt(numberInput.value, 10);
+
+  if (!isNaN(inputValue) && inputValue >= 0 && inputValue <= 10) {
+  } else {
+    alert("inserisci un numero da 3 a 10 massimo")
+  }
+});
+
 function toggle() {
   if (inputCheck.checked && radioButtonHard.checked) {
-    const textBoxQuestions = document.getElementById("text").value;
-    linkButton.href = `./questions.html?difficoltà=hard&amount=${textBoxQuestions}`;
+    
+    linkButton.href = `./questions.html?difficoltà=hard&amount=${inputValue}`;
     console.log(linkButton);
   } else if (inputCheck.checked && radioButtonEasy.checked) {
-    const textBoxQuestions = document.getElementById("text").value;
-    linkButton.href = `./questions.html?difficoltà=easy&amount=${textBoxQuestions}`;
+    linkButton.href = `./questions.html?difficoltà=easy&amount=${inputValue}`;
     console.log(linkButton);
   } else if (inputCheck.checked && radioButtonMedium.checked) {
-    const textBoxQuestions = document.getElementById("text").value;
-    linkButton.href = `./questions.html?difficoltà=medium&amount=${textBoxQuestions}`;
+    
+    linkButton.href = `./questions.html?difficoltà=medium&amount=${inputValue}`;
+    console.log(linkButton);
   } else {
     linkButton.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    console.log(linkButton);
   }
 }
 difficulty.forEach(element => {

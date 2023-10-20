@@ -65,6 +65,7 @@ ul {
   font-weight: 900;
   box-shadow: 2px 2px 40px #3cc1ff;
   margin-left: 17%;
+  cursor: pointer;
 }
 
 .checkLabel {
@@ -315,16 +316,14 @@ h3 {
   width: 770px;
   margin-inline: auto;
 }
+.none{
+  display: none;
+}
 
-.more-info-button {
-  background-color: #02ffff;
-  color: #0b113b;
-  font-size: 20px;
-  padding: 15px 60px;
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 900;
-  box-shadow: 2px 2px 40px #3cc1ff;
+.moreInfo,
+.sendFeedback {
+  margin: 0;
+  border: none;
 }
 
 #rateButton {
@@ -349,7 +348,7 @@ h3 {
   font-size: 18px;
   color: white;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 5px 20px;
   outline: transparent;
 }

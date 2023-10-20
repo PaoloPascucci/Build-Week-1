@@ -7,81 +7,41 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet" />
   </head>
-
-<body>
-  <header>
-    <a href="./homepage.html"><img src="./assets/img/epicode_logo.png" alt="Logo Epicode" class="logoEpicode" /></a>
-  </header>
-  <main id="finalHtml">
-    <h1 class="title" id="h1Final"><b>Tell us how it's going</b></h1>
-    <h3 id="h3Final">From 0 to 10, how likely are you to recommend EPICODE <br> to a friend or a colleague?</h3>
-    
-    <div>
-  
-            <a href="#" class="star-rating" id="1"></a>
-            <a href="#" class="star-rating" id="2"></a>
-            <a href="#" class="star-rating" id="3"></a>
-            <a href="#" class="star-rating" id="4"></a>
-            <a href="#" class="star-rating" id="5"></a>
-            <a href="#" class="star-rating" id="6"></a>
-            <a href="#" class="star-rating" id="7"></a>
-            <a href="#" class="star-rating" id="8"></a>
-            <a href="#" class="star-rating" id="9"></a>
-            <a href="#" class="star-rating" id="10"></a>
-
-           
-            <script>
-              const stars = document.querySelectorAll('.star-rating');
-              console.log(stars);
-              
-              stars.forEach((star, index) => {
-                  star.addEventListener('click', () => {
-                    stars.forEach((star, index2) => {
-                      if (index >= index2) {
-                        star.classList.add("active");
-                      }
-                      else
-                      {
-                        star.classList.remove("active");
-                      }
-                    })
-
-                  });
-                  
-              });
-
-
-              
-                
-              
-          </script>     
-   
-
-
-  </div>
-    <div id="commentSection">
-      <h3>Leave us an open feedback about your experience so far</h2>
-        <input type="text" placeholder="Write your comment here" id="commentFinal">
+  <body>
+    <header>
+      <a href="./homepage.html"><img src="./assets/img/epicode_logo.png"
+          alt="Logo Epicode" class="logoEpicode" /></a>
+    </header>
+    <main id="finalHtml">
+      <h1 class="title" id="h1Final"><b>Tell us how it's going</b></h1>
+      <h3 id="h3Final">From 0 to 10, how likely are you to recommend EPICODE <br>
+        to a friend or a colleague?</h3>
+      <div>
+        <a href="#" class="star-rating" id="1"></a>
+        <a href="#" class="star-rating" id="2"></a>
+        <a href="#" class="star-rating" id="3"></a>
+        <a href="#" class="star-rating" id="4"></a>
+        <a href="#" class="star-rating" id="5"></a>
+        <a href="#" class="star-rating" id="6"></a>
+        <a href="#" class="star-rating" id="7"></a>
+        <a href="#" class="star-rating" id="8"></a>
+        <a href="#" class="star-rating" id="9"></a>
+        <a href="#" class="star-rating" id="10"></a>
+      </div>
+      <div id="commentSection">
+        <h3 style="margin-bottom: 20px;">Leave us an open feedback about your experience so far</h2>
+        <input type="text" placeholder="Write your comment here"
+          id="commentFinal">
+      </div>
+    </main>
+    <div id="rateButton">
+      <button type="submit" class="blue-button sendFeedback">Invia Feedback</button>
+      <a href="https://epicode.com/it/" class="blue-button none moreInfo">MORE INFO</a>
     </div>
-  </main>
-  <section id="rateButton">
-    <a href="https://epicode.com/it/" id="proceedButton" class="more-info-button">MORE INFO</a>
-  </section>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-   
-  
-</body>
-
+    <script src="./js/final.js"></script>
+  </body>
 </html>

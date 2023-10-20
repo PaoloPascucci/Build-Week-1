@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let intervalID;
   const urlParams = new URLSearchParams(window.location.search);
   const difficultyTest = urlParams.get("difficoltà");
-  const amountOfQuestions = urlParams.get("amount");
-  console.log(amountOfQuestions);
+  const amount = urlParams.get("amount");
   let array;
 
   if (difficultyTest === "easy") {
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
           createRadioOption(incorrectAnswer);
         });
       }
-      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${amountOfQuestions}`;
+      h2.innerHTML = `<span>QUESTION ${currentQuestionsIndex + 1}</span> / ${amount}`;
     }
     progress();
   };
@@ -57,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
         counter = 30;
         currentQuestionsIndex++;
         wrongAnswer++;
-        if (currentQuestionsIndex < amountOfQuestions) {
+        if (currentQuestionsIndex < amount) {
           start(); // Display the next question
         } else {
-          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amountOfQuestions}`;
+          window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amount}`;
         }
       }
     }, 1000);
@@ -103,11 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       currentQuestionsIndex++;
-      if (currentQuestionsIndex < amountOfQuestions) {
+      if (currentQuestionsIndex < amount) {
         stopCounter();
         start(); // Display the next question
       } else {
-        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amountOfQuestions}`;
+        window.location.href = `result.html?correct=${correctAnswer}&wrong=${wrongAnswer}&array=${array}&amount=${amount}`;
       }
     }, 1000);
   }
